@@ -203,3 +203,92 @@ footer {
 }
 
 
+/* --- Styles Spécifiques à la Page de Contact --- */
+
+/* Conteneur principal du formulaire */
+.contact-section {
+    padding: 40px 20px; /* Plus de padding que le 'main' par défaut */
+    background-color: #f0f0f0; /* Un fond légèrement gris pour faire ressortir la section */
+    border-radius: 8px; /* Bords légèrement arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    margin: 30px auto; /* Centre la section et ajoute de la marge */
+    max-width: 800px; /* Limite la largeur du formulaire pour une meilleure lisibilité */
+}
+
+.contact-section h2 {
+    color: green; /* Utilise la couleur verte de votre header */
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-section p.lead {
+    color: #555; /* Couleur de texte plus foncée */
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+/* Style des labels de formulaire */
+.form-label {
+    font-weight: bold; /* Plus épais que le standard */
+    color: #333; /* Couleur de texte par défaut */
+    margin-bottom: 5px; /* Petit espace sous le label */
+    display: block; /* S'assure que le label prend toute la largeur */
+}
+
+/* Style des champs de formulaire (input, textarea) */
+.form-control {
+    width: 100%; /* S'assure que les champs prennent toute la largeur disponible */
+    padding: 12px 15px; /* Plus de padding pour un meilleur toucher */
+    border: 1px solid #ced4da;
+    border-radius: 5px; /* Bords légèrement arrondis */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
+    margin-bottom: 15px; /* Espace entre les champs */
+    font-size: 1rem; /* Taille de police standard */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: green; /* Utilise votre couleur verte au focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.25); /* Ombre verte légèrement transparente au focus */
+    outline: none; /* Supprime l'outline par défaut du navigateur */
+}
+
+/* Styles pour la validation (Bootstrap gère déjà les classes .is-invalid/.is-valid) */
+.form-control.is-invalid {
+    border-color: #dc3545; /* Rouge standard pour les erreurs */
+}
+
+.invalid-feedback {
+    color: #dc3545; /* Rouge pour le texte d'erreur */
+    font-size: 0.875em;
+    margin-top: -10px; /* Remonte légèrement le message pour qu'il soit plus proche du champ */
+    margin-bottom: 15px; /* Espace après le message */
+    display: block; /* S'assure que le message d'erreur est sur sa propre ligne */
+}
+
+/* Style du bouton d'envoi */
+.btn-primary {
+    background-color: green; /* Utilise la couleur verte de votre header */
+    border-color: green; /* Bordure assortie */
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px; /* Bords légèrement arrondis comme vos autres boutons */
+    cursor: pointer;
+    width: 100%; /* Rend le bouton pleine largeur dans sa colonne */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: darkgreen; /* Vert plus foncé au survol */
+    border-color: darkgreen;
+    transform: translateY(-2px); /* Petit effet de levage au survol */
+}
+
+/* Ajustement pour Bootstrap's d-grid gap-2 si utilisé */
+.d-grid.gap-2 {
+    gap: 15px; /* Assure un espacement si d'autres éléments sont dans cette grille */
+}
